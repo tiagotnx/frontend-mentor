@@ -105,7 +105,7 @@ main {
     border-radius: 0.5rem;
     overflow: hidden;
     display: grid;
-    max-width: 580px;
+    max-width: 600px;
 }
 
 .text-container {
@@ -170,5 +170,9 @@ main {
 @media (min-width: 600px) {
     .container {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .text-container {
+        padding: 2rem;
     }
 }
