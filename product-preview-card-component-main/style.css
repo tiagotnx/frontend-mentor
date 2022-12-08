@@ -156,7 +156,8 @@ main {
     transition: 0.2s ease;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     background-color: var(--clr-primary-500);
 }
 
