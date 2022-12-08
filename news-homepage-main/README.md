@@ -10,11 +10,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
     -   [Links](#links)
 -   [My process](#my-process)
     -   [Built with](#built-with)
-    -   [What I learned](#what-i-learned)
-    -   [Continued development](#continued-development)
-    -   [Useful resources](#useful-resources)
 -   [Author](#author)
--   [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -32,8 +28,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/news-homepage-Gg08SKpvdy)
+-   Live Site URL: [Add live site URL here](https://6392070c98725800a65324f2--stirring-raindrop-c8d55a.netlify.app/)
 
 ### Built with
 
