@@ -21,6 +21,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 1rem;
 }
 /*
   2. Remove default margin
@@ -155,7 +157,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-content: flex-start;
-    padding: 0 0 130px 0;
+    padding: 0 0 2rem 0;
 }
 
 .section-container {
@@ -213,6 +215,7 @@ main {
 .news-title {
     color: var(--clr-primary-orange);
     font-size: 2.4rem;
+    margin: 0 0 2rem 0;
 }
 
 .news-list {
@@ -247,7 +250,7 @@ main {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    margin: 30px 0 0 0;
+    margin: 40px 0 0 0;
 }
 
 .list-top-item {
