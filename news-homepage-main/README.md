@@ -40,6 +40,6 @@ Users should be able to:
 
 ## Author
 
--   Website - [Add your name here](https://github.com/TiagoTNX)
+-   Website - [@tiagotnx](https://github.com/TiagoTNX)
 -   Frontend Mentor - [@tiagotnx](https://www.frontendmentor.io/profile/tiagotnx)
--   Twitter - [@yourusername](https://www.twitter.com/tiagotnx)
+-   Twitter - [@tiagotnx](https://www.twitter.com/tiagotnx)

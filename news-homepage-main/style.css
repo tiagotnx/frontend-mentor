@@ -116,6 +116,15 @@ body {
     max-width: 1110px;
     width: 100%;
 }
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: var(--clr-neutral-1000);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 8;
+    transition: 0.25s ease;
+}
 
 .nav-list {
     gap: 2.375rem;
@@ -130,6 +139,13 @@ body {
     color: var(--clr-primary-red);
 }
 
+.menu-button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+
 main {
     font-size: 15px;
     margin: 0 auto;
@@ -139,7 +155,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-content: flex-start;
-    padding: 0 0 2rem 0;
+    padding: 0 0 130px 0;
 }
 
 .section-container {
@@ -231,7 +247,7 @@ main {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    margin: 30px 0;
+    margin: 30px 0 0 0;
 }
 
 .list-top-item {
@@ -247,6 +263,11 @@ main {
 
 .list-top-text h3 {
     color: var(--clr-neutral-1000);
+    transition: 0.2s;
+}
+
+.list-top-text h3:hover {
+    color: var(--clr-primary-red);
 }
 
 .list-top-text p:first-child {
@@ -291,6 +312,48 @@ main {
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -320px;
+        width: 100%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: var(--clr-neutral-100);
+        justify-content: space-between;
+        padding: 2rem 1rem 2rem 2rem;
+        z-index: 9;
+        transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    }
+
+    header.active nav {
+        transform: translateX(-320px);
+        transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    }
+
+    header nav .nav-list {
+        margin: 130px 0 0 0;
+        flex-direction: column;
+    }
+
+    header.active .overlay {
+        opacity: 0.5;
+        pointer-events: all;
+    }
+
+    header nav .nav-list .nav-link {
+        font-size: 1.5rem;
+    }
+
+    header nav .menu-button {
+        align-self: flex-start;
+    }
+
+    .menu-button {
+        display: block;
     }
 
     .section-container {
